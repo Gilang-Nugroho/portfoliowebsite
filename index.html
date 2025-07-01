@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gilang Nugroho</title>
+    <link rel="icon" href="./img/favicon.ico" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav id="navbar" data-aos="fade-down" data-aos-duration="1000">
+      <div class="nav-left">
+        <p>Gilang Nugroho</p>
+      </div>
+
+      <div class="nav-center">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <img
+          src="./img/mode-dark-svgrepo-com.svg"
+          alt=""
+          id="darkMode"
+          class="toggleMode"
+          onclick="switchMode()"
+        />
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Home section start -->
+    <section id="homePage">
+      <div class="homeContainer">
+        <div class="greeting">
+          <h5 data-aos="fade-up" data-aos-duration="1000">Hello everyone🤚</h5>
+        </div>
+
+        <div class="fullName">
+          <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+            I'm Gilang Nugroho
+          </h1>
+        </div>
+
+        <div class="status">
+          <h3 data-aos="fade-up" data-aos-duration="1400" data-aos-delay="1000">
+            Collage Student
+          </h3>
+          <img
+            src="./img/college-svgrepo-com (birdonk).svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-delay="1000"
+            id="collegeIcon"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- About start -->
+    <section id="about">
+      <div class="aboutContainer">
+        <div class="titleAbout">
+          <h1 data-aos="fade-up" data-aos-duration="1000">About</h1>
+        </div>
+
+        <div class="descriptionAbout">
+          <div class="imageAbout">
+            <img
+              src="./img/Portfolio Image3.jpeg"
+              alt="Gilang Nugroho"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="500"
+            />
+          </div>
+
+          <div class="paragrafAbout">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              data-aos-delay="1000"
+            >
+              I am an undergraduate student majoring in Electromedical
+              Engineering with a growing passion for web development. While my
+              academic focus is on healthcare technology, I am highly motivated
+              to expand my skills in front-end and back-end programming. I enjoy
+              learning new technologies and building modern, functional
+              websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <!-- skills start -->
+    <section id="skills">
+      <div class="skillsContainer">
+        <div class="titleSkills">
+          <h1 data-aos="fade-up" data-aos-duration="1000">Skills</h1>
+        </div>
+
+        <div
+          class="mySkills"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <div class="skillsDetail">
+            <img src="./img/html-5-svgrepo-com.svg" alt="html" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/css-3-svgrepo-com.svg" alt="css" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/javascript-svgrepo-com.svg" alt="javascript" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/bootstrap-svgrepo-com.svg" alt="bootstrap" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/tailwind-svgrepo-com.svg" alt="tailwind" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/python-svgrepo-com.svg" alt="python" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/c-svgrepo-com.svg" alt="c" />
+          </div>
+          <div class="skillsDetail">
+            <img src="./img/cplusplus-svgrepo-com.svg" alt="c++" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills end -->
+
+    <!-- projects start -->
+    <section id="projects">
+      <div class="projectsContainer">
+        <div class="titleProjects">
+          <h1 data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+        </div>
+
+        <div
+          class="myProjects"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/suwitgameV2.github.io/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/SuwitGameV2.PNG" alt="" />
+            <h5>Suwit Game V2</h5>
+            <p>
+              This is a development of the previous version. The use of images
+              is intended to be more interactive and attractive in terms of
+              appearance.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/gilangnugroho.github.io/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/Portfolio V1.PNG" alt="" />
+            <h5>Portfolio Website V1</h5>
+            <p>
+              A personal website built with HTML, CSS, and Javascript to
+              showcase my profile, skills, and projects. It was my first step in
+              learning web development and responsive design.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/suwitgame.github.io/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/SuwitGame.PNG" alt="" />
+            <h5>Suwit Game V1</h5>
+            <p>
+              A classic rock-paper-scissors game created using JavaScript. This
+              project helped me understand event handling, conditional logic,
+              and DOM manipulation.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/simpleloginpage/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/LoginPage.PNG" alt="" />
+            <h5>Login Page</h5>
+            <p>
+              A simple login form designed with a modern UI. I used this project
+              to practice layout structuring and form input styling with HTML
+              and CSS.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/notesapp/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/NotesApp.PNG" alt="" />
+            <h5>Notes App</h5>
+            <p>
+              A note-taking application where users can add and delete notes.
+              Built with JavaScript (using React+Vite) and localStorage, it
+              helped me explore basic CRUD concepts in web development.
+            </p>
+            <p class="technology">
+              Technology used: HTML, CSS, Javascript, React+Vite
+            </p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/movies-time/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/Movies.PNG" alt="" />
+            <h5>Movies List</h5>
+            <p>
+              A movie browsing web app that allows users to search movies and
+              switch themes using dark mode. This project sharpened my skills in
+              DOM interaction and API usage.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <img
+              src="./img/web-link-svgrepo-com.svg"
+              alt=""
+              class="webLink"
+              id="webLink"
+            />
+            <img src="./img/KedaiJuara.PNG" alt="" />
+            <h5>Kedai Juara</h5>
+            <p>
+              A landing page for a fictional food brand using HTML, CSS, and
+              JavaScript. Features interactive UI elements and responsive
+              layout.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+
+          <div class="projectsDetail">
+            <img
+              src="./img/web-link-svgrepo-com.svg"
+              alt=""
+              class="webLink"
+              id="webLink"
+            />
+            <img src="./img/ContactApps.PNG" alt="" />
+            <h5>Contact App</h5>
+            <p>
+              A contact management app using JavaScript (React+Vite) and
+              localStorage. Supports adding and deleting contact entries with a
+              clean interface.
+            </p>
+            <p class="technology">
+              Technology used: HTML, CSS, Javascript, React+Vite
+            </p>
+          </div>
+
+          <div class="projectsDetail">
+            <a href="https://gilang-nugroho.github.io/bookshelfApps.github.io/">
+              <img
+                src="./img/web-link-svgrepo-com.svg"
+                alt=""
+                class="webLink"
+                id="webLink"
+              />
+            </a>
+            <img src="./img/BookShelf.PNG" alt="" />
+            <h5>BookShelf</h5>
+            <p>
+              A book tracking app that lets users organize books into finished
+              and unfinished categories. Built using HTML, CSS, JavaScript, and
+              localStorage.
+            </p>
+            <p class="technology">Technology used: HTML, CSS, Javascript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- contact start -->
+    <section id="contact">
+      <div class="contactContainer">
+        <div class="titleContact">
+          <h1 data-aos="fade-up" data-aos-duration="1000">Contact</h1>
+        </div>
+
+        <div
+          class="myContact"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          <form action="">
+            <label for="">Full Name</label>
+            <input type="text" placeholder="Full Name" />
+
+            <label for="">Email</label>
+            <input type="email" name="" id="" placeholder="Email" />
+
+            <label for="">Message</label>
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer id="footer">
+      <p>Made with 🧡 by Gilang Nugroho | 2025</p>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- initialize aos -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
