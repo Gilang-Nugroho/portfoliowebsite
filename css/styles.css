@@ -647,6 +647,9 @@ footer p {
 
   footer {
     padding: 1.5rem;
-    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
   }
 }
