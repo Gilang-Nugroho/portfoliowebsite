@@ -10,6 +10,18 @@
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- humberger -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
     <!-- navbar start -->
@@ -18,7 +30,11 @@
         <p>Gilang Nugroho</p>
       </div>
 
-      <div class="nav-center">
+      <div class="humbergerMenu" id="humbergerMenu">
+        <i class="ph ph-list"></i>
+      </div>
+
+      <div class="nav-center navCenterList" id="navCenter">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -26,7 +42,7 @@
         <a href="#contact">Contact</a>
       </div>
 
-      <div class="nav-right">
+      <div class="nav-right navRightList" id="navRight">
         <img
           src="./img/mode-dark-svgrepo-com.svg"
           alt=""

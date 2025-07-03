@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+.humbergerMenu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* navbar start */
@@ -30,17 +37,12 @@ nav {
   color: #254d70;
 }
 
-.nav-right img {
-  width: 1.2rem;
-  cursor: pointer;
-}
-
 .nav-center {
   display: flex;
   gap: 2rem;
-  /* background-color: red; */
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .nav-center a {
@@ -83,10 +85,15 @@ nav {
   -o-transform: scale(1);
 }
 
-.nav-right button {
-  padding: 0.5rem 1.5rem;
-  background-color: transparent;
-  border: 1px solid black;
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right img {
+  width: 1.2rem;
+  cursor: pointer;
 }
 /* navbar end */
 
@@ -181,7 +188,6 @@ nav {
 /* About end */
 
 /* skills start */
-
 .skillsContainer {
   padding-top: 8rem;
   text-align: center;
@@ -458,73 +464,6 @@ footer p {
 }
 /* footer end */
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .nav-center {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .homeContainer {
-    padding: 3rem 1rem;
-  }
-
-  .fullName h1 {
-    font-size: 2.5rem;
-  }
-
-  .status h3 {
-    font-size: 1.5rem;
-  }
-
-  .descriptionAbout {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-
-  .mySkills {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .myProjects {
-    padding: 0 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  form {
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-center a {
-    font-size: 0.9rem;
-  }
-
-  .nav-left p {
-    font-size: 1rem;
-  }
-
-  .nav-right button {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .fullName h1 {
-    font-size: 2rem;
-  }
-
-  .status h3 {
-    font-size: 1.2rem;
-  }
-}
-
 /* dark mode general text */
 .dark,
 .dark * {
@@ -622,4 +561,91 @@ footer p {
 /* gambar tetap tampil normal */
 .dark img {
   filter: brightness(0.9);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    gap: 1rem;
+  }
+
+  .nav-center {
+    flex-direction: column;
+    width: 100%;
+    order: 1;
+  }
+
+  .nav-center.navCenterList {
+    display: none;
+  }
+
+  .humbergerMenu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .homeContainer {
+    padding: 5rem 1rem 5.5rem 1rem;
+    /* background-color: red; */
+  }
+
+  .fullName h1 {
+    font-size: 2.5rem;
+  }
+
+  .status h3 {
+    font-size: 1.5rem;
+  }
+
+  .mySkills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .myProjects {
+    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  form {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .homeContainer {
+    /* background-color: red; */
+    padding: 10rem 0 7.5rem 0;
+    margin-bottom: 2.2rem;
+  }
+
+  .fullName h1 {
+    font-size: 2rem;
+  }
+
+  .paragrafAbout {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .skillsContainer {
+    margin-top: -4rem;
+  }
+
+  .myProjects {
+    gap: 2rem;
+  }
+
+  .projectsContainer {
+    margin-top: -3rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
 }
