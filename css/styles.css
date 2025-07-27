@@ -7,12 +7,6 @@
   list-style-type: none;
 }
 
-.humbergerMenu {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
 /* navbar start */
 nav {
   background-color: white;
@@ -89,11 +83,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .nav-right img {
   width: 1.2rem;
   cursor: pointer;
+}
+
+.nav-right i {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* background-color: red; */
 }
 /* navbar end */
 
@@ -194,6 +196,10 @@ nav {
 .skillsContainer {
   padding-top: 8rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titleSkills h1 {
@@ -216,17 +222,17 @@ nav {
 
 .mySkills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* Default for larger screens */
   margin-top: 3rem;
   justify-items: center;
-  gap: 3rem 0;
-  padding: 1rem;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 6.2rem;
 }
 
 .skillsDetail {
-  width: 120px;
-  height: auto;
-  border-radius: 1rem;
+  width: 100%;
+  border-radius: 8px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.7);
@@ -236,10 +242,10 @@ nav {
   -moz-transition: transform 0.2s ease;
   -ms-transition: transform 0.2s ease;
   -o-transition: transform 0.2s ease;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .skillsDetail:hover {
@@ -252,10 +258,16 @@ nav {
 }
 
 .skillsDetail img {
-  width: 100%;
+  width: 120px;
   height: auto;
-  display: block;
   padding: 0.8rem;
+  background-color: transparent;
+}
+
+.skillsDetail p {
+  font-family: "Poppins";
+  /* background-color: red; */
+  padding-bottom: 1rem;
 }
 
 /* skills end */
@@ -264,6 +276,10 @@ nav {
 .projectsContainer {
   padding-top: 8rem;
   text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 .titleProjects h1 {
@@ -287,16 +303,16 @@ nav {
 .myProjects {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   padding: 0 4rem;
-  gap: 3rem 0;
+  gap: 1.5rem;
 }
 
 .projectsDetail {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
   height: auto;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
@@ -325,10 +341,12 @@ nav {
 }
 
 .projectsDetail img {
-  width: 100%;
+  width: 85%;
   height: auto;
   display: block;
+  margin: 0 auto;
   padding: 0.5rem;
+  background-color: transparent;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -346,7 +364,7 @@ nav {
 }
 
 .projectsDetail p {
-  padding: 0 0.6rem 1rem 0.6rem;
+  padding: 0 1rem 1rem 1rem;
   text-align: start;
   font-size: 0.8rem;
 }
@@ -618,12 +636,6 @@ footer p {
     display: none;
   }
 
-  .humbergerMenu {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-
   .homeContainer {
     padding: 5rem 1rem 5.5rem 1rem;
     /* background-color: red; */
@@ -638,8 +650,8 @@ footer p {
   }
 
   .mySkills {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     padding: 0 2rem;
   }
 
@@ -683,7 +695,7 @@ footer p {
   }
 
   footer {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
 
   footer p {
