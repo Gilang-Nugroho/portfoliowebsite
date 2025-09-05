@@ -96,26 +96,33 @@ nav {
   font-weight: bold;
   cursor: pointer;
   /* background-color: red; */
+  display: none;
 }
 /* navbar end */
 
 /* hompage start */
 .homeContainer {
   text-align: center;
-  margin-top: 9.5rem;
-  padding: 4.2rem 3rem;
+  /* margin-top: 9.5rem; */
+  /* padding: 0 3rem; */
   font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 0.5rem;
 }
 
 .greeting h5 {
   font-size: 1.5rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   color: rgb(112, 112, 112);
 }
 
 .fullName h1 {
   font-size: 4rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   color: #4da8da;
 }
 
@@ -139,7 +146,7 @@ nav {
 
 /* About start */
 .aboutContainer {
-  padding-top: 8rem;
+  padding-top: 7rem;
   text-align: center;
 }
 
@@ -194,7 +201,7 @@ nav {
 
 /* skills start */
 .skillsContainer {
-  padding-top: 8rem;
+  padding-top: 7rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -274,12 +281,8 @@ nav {
 
 /* projects start */
 .projectsContainer {
-  padding-top: 8rem;
+  padding-top: 7rem;
   text-align: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
 }
 
 .titleProjects h1 {
@@ -377,7 +380,7 @@ nav {
 
 /* contact start */
 .contactContainer {
-  padding-top: 8rem;
+  padding-top: 7rem;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
@@ -634,6 +637,10 @@ footer p {
 
   .nav-center.navCenterList {
     display: none;
+  }
+
+  .nav-right i {
+    display: flex;
   }
 
   .homeContainer {
